@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Proweb 3</title>
+</head>
+<script>
+    function proses1(){
+    var a = parseInt(document.aritmatika.bil1.value);
+    var b = parseInt(document.aritmatika.bil2.value);
+    var c = a + b
+    document.getElementById("hasil").innerHTML=(+a+ " + " +b+ " = "+c);
+    }
+    function proses2(){
+    var a = parseInt(document.aritmatika.bil1.value);
+    var b = parseInt(document.aritmatika.bil2.value);
+    var c = a - b
+    document.getElementById("hasil").innerHTML=(+a+ " - " +b+ " = "+c);
+    }
+    function proses3(){
+    var a = parseInt(document.aritmatika.bil1.value);
+    var b = parseInt(document.aritmatika.bil2.value);
+    var c = a * b
+    document.getElementById("hasil").innerHTML=(+a+ " x " +b+ " = "+c);
+    }
+    function proses4(){
+    var a = parseInt(document.aritmatika.bil1.value);
+    var b = parseInt(document.aritmatika.bil2.value);
+    var c = a / b
+    document.getElementById("hasil").innerHTML=(+a+ " : " +b+ " = "+c);
+    }
+    </script> 
+<body style="background-image: url(bg.jpg); background-size: 48%;"><br><br><br>
+    <center>
+        <form name="aritmatika">
+            <fieldset style="background: url(bg2.jpg); width:50%; border-color:peru ; "">
+            <legend style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px;"><b>Operator Aritmatika</b></legend><br>
+            <label style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 16px;">Masukkan Bilangan Pertama :</label><br><br>
+            <input type="text" name="bil1" required><br><br>
+            <label style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 16px;">Masukkan Bilangan Kedua :</label><br><br>
+            <input type="text" name="bil2" required><br><br><br>
+            <input type="button" onclick="proses1()" value="+"> &nbsp;
+            <input type="button" onclick="proses2()" value="-"> &nbsp;
+            <input type="button" onclick="proses3()" value="x"> &nbsp;
+            <input type="button" onclick="proses4()" value=":"><br><br>
+            </fieldset><br><br>
+        </form>
+        <form>
+            <fieldset style="background: url(bg2.jpg); width:50%; height:83px; border-color:peru ; "">
+            <legend style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px;"><b>Hasil</b></legend><br>
+            <div id="hasil" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 16px;"></div><br>
+            </fieldset>
+        </form>
+    </center>
+</body>
+</html>
