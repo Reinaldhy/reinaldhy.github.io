@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap-4.5.3-dist/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
+    <link rel="stylesheet" href="mainstyle.css">
+    <script type="text/javascript" src="bootstrap/bootstrap-4.5.3-dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="jquery/jquery-3.5.1.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Proweb</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="daftartugas.php">Tugas</a>
+                    <a class="nav-link" href="tugas4.php">About</a>
+                    <a class="nav-link" href="#">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <br><br>
+    <table style="width:75%" border="0" align="center">
+        <tr>
+            <td colspan="2">
+            <center>
+                <p><b style="font-size: 24px;">Pendaftaran Akun</b></p><br>
+                <img src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_account_circle_48px-512.png" style="width:200px;height:210px">
+            </center>
+        </tr>
+    </table><br><br>
+    <form action="daftar.php" method="POST">
+        <center>
+        <fieldset class="field1">
+            <legend class="legend1"><center><b style="font-size: 22px">Akun</b></center></legend>
+                <label for="Username">Username :</label><br>
+                <input type="text" name="Username" id="Username" required><br><br>
+                <label for="Email">Email :</label><br>
+                <input type="email" name="Email" id="Email" required><br><br>
+                <label for="Password">Password :</label><br>
+                <input type="password" name="Password" id="Password" required minlength="8"><br><br>
+                <label for="Confirm Password"> Confirm Password :</label><br>
+                <input type="password" name="Confirm Password" id="Confirm Password" required minlength="8"><br><br>
+        </fieldset><br><br><br>
+        
+        <fieldset class="field1">
+                <legend class="legend1"><center><b style="font-size: 22px">Data Diri</center></b></legend>
+                <label for="Nama">Nama :</label><br>
+                <input type="text" name="Nama" id="Nama" required><br><br>
+                <label for="Gender">Gender:</label><br>
+                <input type="radio" name="Gender" id="Pria">
+                <label for="Pria">Pria</label>&nbsp;&nbsp;
+                <input type="radio" name="Gender" id="Wanita">
+                <label for="Wanita">Wanita</label><br><br>
+                <label for="Tempat Lahir">Tempat Lahir :</label><br>
+                <input type="text" name="Tempat Lahir" id="Tempat Lahir" required><br><br>
+                <label for="Tanggal Lahir">Tanggal Lahir :</label><br>
+                <input type="date" name="Tanggal Lahir" id="Tanggal Lahir" required><br><br>
+                <label for="Hobi">Hobi :</label><br>
+                <input type="checkbox" name="Hobi1"> Membaca<br>
+                <input type="checkbox" name="Hobi2"> Menulis<br>
+                <input type="checkbox" name="Hobi3"> Olahraga<br>
+                <input type="checkbox" name="Hobi4"> Traveling<br>
+                <input type="checkbox" name="Hobi5"> Seni<br>
+                <input type="checkbox" name="Hobi6"> Lainnya<br><br>
+                <label for="Alamat">Alamat :</label><br>
+                <textarea name=“Alamat” rows=“5” cols=“5” required></textarea><br><br>
+                <label for="Pendidikan Terakhir">Pendidikan Terakhir :</label><br>
+                <select name="Pendidikan Terakhir" id="Pendidikan Terakhir">
+                <option value="SMA">SMA</option>
+                <option value="D1">D1</option>
+                <option value="D2">D2</option>
+                <option value="D3">D3</option>
+                <option value="S1">S1</option>
+                <option value="S2">S2</option>
+                <option value="S3">S3</option>
+                </select><br><br>
+        </fieldset><br><br>
+        <input class="btn btn-primary" type="submit" value="Submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<input class="btn btn-secondary" type="reset" value="Reset">
+    </center>  
+    </form>
+
+    <br><br><br><br><br>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>Copyright 2020 | by <a href="https://www.instagram.com/reinaldhysp">Reinaldhy Purba</a>.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
